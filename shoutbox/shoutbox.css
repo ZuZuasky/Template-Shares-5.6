@@ -1,0 +1,65 @@
+body
+{
+	background-color : #FFF0F0;  
+	color : #000000;	
+}
+
+a
+{
+	color: #000000;
+	font-weight: bold;
+}
+
+a:hover
+{
+	color: #FF0000;
+}
+
+.small
+{
+	font-size: 8pt;
+	font-family: tahoma;
+}
+
+.date
+{
+	font-size: 7pt;
+	font-family: tahoma;
+}
+
+.error
+{
+	color: #990000;
+	background-color: #FFF0F0;
+	padding: 7px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: 1px dashed #990000;
+}
+
+
+.btn
+{
+  	cursor:pointer;
+	border:outset 1px #ccc;
+	background:#999;
+	color:#666;
+	font-weight:bold;
+	padding: 1px 2px;
+	background:url(../pic/formbg.gif) repeat-x left top;
+}
+
+#shoutbox
+{
+	border: 1px solid gray;
+	width: 510px;
+	background: #FBFCFA;
+	font: 11px verdana, sans-serif;
+	color: #443;
+	padding: 3px;	outline: none;
+}
+
+#shoutbox:focus
+{
+	border: 1px solid black;
+}

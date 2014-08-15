@@ -1,0 +1,2 @@
+[24-May-2009 11:55:46] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required './..//cache/smilies.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/lateamne/public_html/include/globalfunctions.php on line 388
+[24-May-2009 11:55:46] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required './..//cache/smilies.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/lateamne/public_html/include/globalfunctions.php on line 388

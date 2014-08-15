@@ -1,0 +1,25 @@
+.tsbox .stars { background: #cccccc; }
+.tsbox .rated .stars { background: #dcdcdc; }
+.tsbox .rated .hover .stars { background: #cccccc; }
+.tsbox .colorbar { background: #1e90ff; }
+.tsbox .hover .colorbar { background: #ffcc1c; }
+.tsbox .rated .colorbar { background: #64b2ff; }
+.tsbox .rated .hover .colorbar { background: #1e90ff; }
+.tsbox .ghost { background: #a1a1a1; }
+.tsbox .indicator { clear: both; }
+
+.tsbox .dotted .stars,
+.tsbox .dotted .hover .stars,
+.tsbox .dotted .rated .stars, 
+.tsbox .dotted .rated .hover .stars { background: url(../images/background_dotted.gif) top left repeat-x; }
+.tsbox .dotted .colorbar,
+.tsbox .dotted .hover .colorbar,
+.tsbox .dotted .rated .colorbar, 
+.tsbox .dotted .rated .hover .colorbar { background: #000000; }
+.tsbox .dotted .ghost { background: #666666; }
+
+.tsbox .pointy .colorbar { background: #ffcc1c; }
+.tsbox .pointy .hover .colorbar { background: #ff9231; }
+
+.tsbox .inverse .stars { float: right; }
+.tsbox .inverse .indicator { clear: both; display: block; text-align: right; }

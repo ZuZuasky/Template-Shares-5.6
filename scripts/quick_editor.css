@@ -1,0 +1,65 @@
+/*
+	TS Editor for Quick Reply and Comment Area v.0.2 by xam.
+	Special Thanks to parallaxz71 for color images. 
+*/
+
+#message {
+	height:150px;	
+	width:800px;
+	overflow:auto;
+}
+#quickreply a:link, #quickreply a:visited {	
+	padding:2px;
+	text-decoration:none;
+}
+#quickreply a:hover, #quickreply a:active {
+	color:#000;
+	position:relative;
+}
+#quickreply a:link span, #quickreply a:visited span {
+	background:#000;
+	display:none;
+	z-index:10;
+}
+#quickreply a:hover span, #quickreply a:active span {
+	position:absolute;
+	top:15px;
+	left:0px;
+	display:block;
+	z-index:10;	
+	padding:3px;	
+	border:1px solid #444;
+	width:140px;
+	cursor:pointer;
+}
+#comment a:link, #comment a:visited {	
+	padding:2px;
+	text-decoration:none;
+}
+#comment a:hover, #comment a:active {
+	color:#000;
+	position:relative;
+}
+#comment a:link span, #comment a:visited span {
+	background:#000;
+	display:none;
+	z-index:10;
+}
+#comment a:hover span, #comment a:active span {
+	position:absolute;
+	top:15px;
+	left:0px;
+	display:block;
+	z-index:10;	
+	padding:3px;	
+	border:1px solid #444;
+	width:140px;
+	cursor:pointer;
+}
+span img {
+	border:1px solid #fff;
+	display:inline;
+	float:left;
+	height:18px;
+	width:18px;		
+}
