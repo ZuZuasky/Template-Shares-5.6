@@ -1,0 +1,44 @@
+255 255 255|0 0 0         # background color: R G B|foreground color: R G B
+none                      # background image (fill in "none" if no image)
+WordHunt_banner.gif|10 5  # title image (fill in "none" if no image) and origin x y
+300 300|10 50             # main board width height|origin x y
+100 300|320 50            # key list width height|origin x y
+45 20|320 20              # 'New' button width height|origin x y
+45 20|375 20              # 'Show' button width height|origin x y
+180 180 180|20 20         # grid line color|row column
+255 0 0                   # crossout line color 
+0 0 0|Helvetica|12|0      # font color|font|size|style
+340 14|-1                 # timer x y|time limit in minutes (no limit if less than 0) 
+You Won!|none|_self       # winning text|URL (use "none" if no link)|frame
+You Lost!|none|_self      # losing text|URL (use "none" if no link)|frame
+30                        # number of words 
+bear
+camel
+crockdile
+deer
+dog
+eagle
+elephant
+frog
+giraffe
+hippo
+horse
+koala
+leopard
+lima
+lion
+monkey
+panda
+panther
+parrot
+peacock
+pig
+rhino
+seal
+sheep
+snake
+tiger
+zebra
+parallax
+snazzy
+tritavern

@@ -1,0 +1,116 @@
+<HR><center>
+<A HREF="jsolitaire.php">Home</A> |
+<A HREF="klondike-help.html"> Klondike</A> |
+<A HREF="freecell-help.html"> FreeCell</A> |
+<A HREF="canfield-help.html"> Canfield</A> |
+<A HREF="golf-help.html"> Golf </A> |
+<A HREF="pyramid-help.html"> Pyramid </A> |
+<A HREF="spider-help.html"> Spider </A> |
+<A HREF="clock-help.html"> Clock </A> | <p><p>
+<A HREF="calculation-help.html"> Calculation </A> |
+<font color="#cc6600">Shamrocks</font> |
+<A HREF="scorpion-help.html"> Scorpion </A> |
+<A HREF="kingalbert-help.html"> King Albert </A> |
+<A HREF="yukon-help.html"> Yukon </A> |
+<A HREF="castle-help.html"> Beleaguered Castle </A> |
+<A HREF="flowergarden-help.html"> Flower Garden </A>
+</center><HR>
+<P>
+<HTML>
+<HEAD><TITLE> Shamrocks Solitaire Help </TITLE> </HEAD>
+<BODY>
+
+<H1> Shamrocks Instructions </H1>
+
+Version 1.01 (Feb 10 2000) Copyright &copy; 1999-2000 Andrew Pipkin
+<I><A HREF="mailto:apipkin@pagesz.net">apipkin@pagesz.net</A></I>
+
+<H2> Overview </H2>
+
+At first glance, victory in Shamrocks solitaire appears easy to attain. The
+layout contains 18 building stacks, which accept cards in both
+ascending and descending rank regardless of suit. However, a stack can
+accept no more than 3 cards and removing all cards from a stack takes
+it out of play, which makes the game considerably more challenging.
+
+<H2> Layout </H2>
+
+There are two types of stacks on the screen
+
+<UL>
+<LI> <B>Building Stacks </B>
+All stacks in the layout except for those in the leftmost column are
+building stacks. A building stack accepts cards in both ascending and
+descending rank. No cards can be added to a building stack if the stack
+contains 3 or 0 cards. The stacks are arranged so that a king will be below
+all cards with the same suit as the king.
+
+<P><LI> <B>Suit Stacks</B>
+The suit stacks are located in the left column of the layout and are initially
+empty. They accept cards of the same suit in ascending order.
+</UL>
+
+<H2> Moving Cards </H2>
+
+To move a card, click on the card (which will highlight it) and then click
+on the destination. Only cards at the top of a building stack can be moved.
+The following are valid moves:
+
+<OL>
+<LI> An ace can be moved to its suit stack. (This will usually be done
+automatically.)
+<P><LI>
+A card can be moved to its corresponding suit stack if the rank of the card
+at the top of that stack is one less than the card's rank (Kings have a rank
+of 13, queens 12, jacks 11 and an ace has a rank of 1).
+<P><LI>
+A card can be moved to an occupied building stack if the stack contains less
+than three cards and the rank of the card is one more or one less than the
+card currently at the top of the stack. The suit of the card is irrelevant.
+No cards can be added to an empty stack.
+</OL> <P>
+
+A card will be automatically moved to the suit stacks from the the building
+stacks if the cards which might be placed on top of it are already in the
+suit stacks. Cards at the bottom of a stack will not be moved automatically
+to prevent the undesired removal of the stack. Clicking undo will retract an
+automatic move.
+
+<H2> Tips </H2>
+
+<UL>
+<LI> Do not remove the final card from a building stack, making the
+stack unusable, unless you are sure the stack is no longer needed.
+<LI> Try to arrange the stacks in descending rank if possible because it
+will make moving cards to the suit stacks much easier.
+
+</UL>
+
+<H2> Buttons </H2>
+
+Clicking on these buttons will perform the following actions:
+
+<DL>
+<DT><B> New Game</B> <DD>Begin a new game after shuffling the deck
+<DT><B> Restart</B> <DD> Return to the original state of the current game
+<DT><B> Undo</B> <DD> Return to the condition before the previous move was
+made
+<DT><A NAME="options"><B> Options</B> </A> <DD> Bring up a window with the
+following options:
+<DL>
+
+<DT>  <B> Automatic card moving </B> <DD> When this box is set (which is the
+default), a card atop a stack will be moved to its suit stack
+automatically if there are no
+cards available which might be placed on top of it. </DL>
+</DL>
+
+<H2> History </H2>
+<DL>
+<DT> <B> Version 1.01 </B> (2000/02/10)
+<DD> Fixed bug which prevented placing cards on an ace in a building stack
+<DT> <B> Version 1.0 </B> (2000/02/08)
+<DD> First public release
+</DL>
+<HR>
+</BODY> </HTML>

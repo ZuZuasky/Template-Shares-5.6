@@ -1,0 +1,159 @@
+<HR><center>
+<A HREF="jsolitaire.php">Home</A> |
+<A HREF="klondike-help.html">Klondike</A> |
+<font color="#cc6600">FreeCell</font> |
+<A HREF="canfield-help.html">Canfield</A> |
+<A HREF="golf-help.html">Golf</A> |
+<A HREF="pyramid-help.html">Pyramid</A> |
+<A HREF="spider-help.html">Spider</A> |
+<A HREF="clock-help.html">Clock</A> | <p><p>
+<A HREF="calculation-help.html">Calculation</A> |
+<A HREF="shamrocks-help.html">Shamrocks</A> |
+<A HREF="scorpion-help.html">Scorpion</A> |
+<A HREF="kingalbert-help.html">King Albert</A> |
+<A HREF="yukon-help.html"> Yukon</A> |
+<A HREF="castle-help.html">Beleaguered Castle</A> |
+<A HREF="flowergarden-help.html">Flower Garden</A>
+</center><HR>
+<P>
+<HTML>
+<HEAD><TITLE> Java FreeCell Help </TITLE> </HEAD>
+<BODY>
+
+<H1> FreeCell Instructions </H1>
+
+Version 1.04 (Feb 8 2000) Copyright &copy; 1999-2000 Andrew Pipkin
+<I><A HREF="mailto:apipkin@pagesz.net">apipkin@pagesz.net</A></I>
+
+<H2> Overview </H2>
+
+Like Klondike solitaire, the goal of FreeCell solitaire is to place all the
+cards in each suit in stacks of ascending order. Stacks of cards with
+alternating colors in descending order can be built in the bottom half of
+the screen as an intermediate step. In FreeCell, the location of all the
+cards in the deck are known at the start of a game. This makes victory
+depend more on strategy than on luck.
+
+<H2> Layout </H2>
+
+There are three areas of the screen:
+
+<UL>
+<LI> <B>Building Stacks</B>
+The building stacks are found in the bottom half of the screen. The contents
+of the entire deck are initially found in the building stacks. All the cards
+in the building stacks are visible, but only the top card can be moved.<P>
+
+<P><LI> <B>Free Cells</B> The free cells are found in the upper left corner
+and are used to temporarily store a card from the building stacks. Only one
+card can be placed in a free cell. <P>
+
+<P><LI> <B>Suit Stacks</B>
+The suit stacks are located in the upper right corner and are initially
+unoccupied.
+</UL>
+
+<H2> Moving Cards </H2>
+
+To move a card, click on the card (which will highlight it) and then
+click on the destination. The following are valid moves:
+
+<OL>
+<LI> An ace can be moved to its suit stack. (This will usually be done
+automatically.)
+<P><LI>
+A card at the top of a stack can be moved to its corresponding suit stack if
+the rank of the card at the top of that stack is one less than the card's
+rank (Kings have a rank of 13, queens 12, jacks 11 and an ace has a rank of
+1).
+<P><LI>
+The card at the top of a building stack can be moved to an empty free cell
+or building stack.
+<P><LI>
+A card can be moved from a free cell or building stack to another building
+stack if the card at the top of the destination stack has a different color
+and a value one more than the card.
+<P><LI>
+Ordered cards at the bottom of a building stack can be moved to another
+building stack if there is a card in the ordered sequence which has a
+different color and a rank one less than the card at the top of the
+destination stack. There must be an empty space for every moved card below
+the top card.
+</OL> <P>
+
+To move an ordered sequence of cards at the top of a stack to an empty
+building stack, first select all the ordered cards by clicking twice on the
+stack, then click the empty space. If there are fewer empty spaces than
+selected cards, the number of cards moved will equal the original number of
+empty spaces.
+<P>
+Right-clicking on a stack will move the its top card to an empty space. If
+more than one card in the right-clicked stack has been selected, the
+selected cards will be moved to empty stacks until there are no more
+selected cards or there are no more empty stacks.
+<P>
+A card will be automatically moved to the suit stacks from the free cells
+and the tops of the building stacks if the cards which might be placed on top
+of it are already in the suit stacks. Clicking undo will retract an
+automatic move.
+
+<H2> Cheating </H2>
+
+Holding the shift key down while moving multiple cards will
+make the move even if there are not enough empty spaces.
+
+<H2> Tips </H2>
+
+<UL>
+<LI> Try to make an empty space in the building stacks early in the game.
+<LI> Move an ordered sequence of cards in stages if there are not enough
+empty spaces to move the sequence in one step. If there is more than one
+empty space, transfer as many cards as possible to each space and then
+reassemble the sequence on the desired destination stack. Even if there are
+not enough empty spaces, it might be possible to move the sequence if there
+is a card on top of another stack which can accept a subsequence of the
+moved cards.
+</UL>
+
+<H2> Buttons </H2>
+
+Clicking on these buttons will perform the following actions:
+
+<DL>
+<DT><B> New Game</B> <DD>Begin a new game after shuffling the deck
+<DT><B> Restart</B> <DD> Return to the original state of the current game
+<DT><B> Undo</B> <DD> Return to the condition before the previous move was
+made
+<DT><A NAME="options"><B> Options</B> </A> <DD> Bring up a window with the
+following options:
+<DL> <DT> <B> Number of Free Cells </B>
+<DD> There can be from 1 to 8 free cells.
+Using fewer free cells than the original 4 will result in a more
+challenging game, while increasing the number will make the game less
+frustrating for novices.
+The additional free cells appear on the right side of the layout.
+<DT> <B> Starting rank </B> <DD> This option sets the rank of the
+cards at the tops of the suit stacks at the start of the game. A new game
+must be started for this option to take effect. Increasing this value will
+result in an easier game.
+<DT>  <B> Automatic card moving </B> <DD> When this box is set (which is the
+default), a card atop a stack will be moved to its suit stack
+automatically if there are no
+cards available which might be placed on top of it. </DL>
+</DL>
+
+<H2> History </H2>
+<DL>
+<DT> <B> Version 1.04 </B> (2000/2/08)
+<DD> Starting rank option added.
+<DT> <B> Version 1.03 </B> (2000/1/17) <DD> Options added.
+<DT><B> Version 1.02 </B> (2000/1/4)
+<DD> "Cheating" added. Also modified to work in Java 1.0 browsers.
+<DT> <B> Version 1.01 </B> (1999/12/24)
+<DD> Various cosmetic improvements such as rounded corners and "ghost" cards
+in empty suit stacks.
+<DT> <B> Version 1.0 </B> (1999/12/03)
+<DD> First public release
+</DL>
+<HR>
+</BODY> </HTML>

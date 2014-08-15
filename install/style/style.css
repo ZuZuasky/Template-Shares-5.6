@@ -1,0 +1,61 @@
+body
+{
+	margin:0px 0;
+    padding:0; 
+	color:#000;  
+    line-height:1.4em; 
+	font-style:normal; 
+	font-variant:normal; 
+	font-weight:normal; 
+	font-size:74%; 
+	font-family:Arial,Sans-Serif; 
+	background: url('../images/sky.jpg');
+    background-attachment: fixed ;
+}
+
+#top a{color:#E0F5FF}
+
+#header
+{
+	margin:0;
+	width:1000px; 
+	background: url('../images/logo.gif') no-repeat center top;  
+	height:200px; 
+	color:#FFF 
+}
+/* fix this after tables resized<---------------------------------------------------------------
+
+#main
+{
+	background:transparent; 
+	width:950px; 
+	margin:0 20px 0 20px; 
+	color:#808080
+}
+*/
+
+.sub{margin:0 0 2px 30px; padding:0 0 0 0px;  color:#888}
+a img{border:none}
+p{margin:0 0 5px 0; padding:0; color:#000; background:inherit}
+a{color:#000; background:inherit; text-decoration:none}
+a:hover{background:inherit; text-decoration:underline}
+/*------------------->consider changing this for table background<-------------------------------------------*/
+table{border-collapse:collapse; border:none; background-color:#ECE9D8}
+table.main, table.mainouter{background-color:#F5F4EA}
+table.message{border:solid #000 1px}
+table.bottom{background:transparent}
+/*<-------------------------------->next line is tablefont size<------------------------------------------>*/
+td{font-size:8pt; border:solid #191919 1px; color:#000}
+/*<-------------------------------->Table banner Below<-------------------------------------------------->*/
+.highlight{  background-color:#CCFF9D}
+.highlight a:hover, .highlight a:active{  color:#000;   background-color:green}
+.tborder{background:#81A2C4; width:100%; margin:auto auto; border:1px solid #191919}
+.thead{background:url(../images/vista_tableheader.gif) top left repeat-x; color:#fff}
+.thead a:link{color:#fff; text-decoration:none}
+.thead a:visited{color:#fff; text-decoration:none}
+.thead a:hover, .thead a:active{color:#fff; text-decoration:underline}
+.trow1{background:#f5f5f5}
+.trow2{background:#EFEFEF}
+.smalltext{font-family:Tahoma,Verdana,Arial,Helvetica,Sans-Serif; font-size:11px}
+/*<-------------------------------------->gets ride of that ugly ass green<---------------------------->*/
+.subheader{font-weight:bold; color:#000; background-color:#3300ff}

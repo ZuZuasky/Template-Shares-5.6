@@ -1,0 +1,139 @@
+<HR><center>
+<A HREF="jsolitaire.php">Home</A> |
+<A HREF="klondike-help.html"> Klondike</A> |
+<A HREF="freecell-help.html"> FreeCell</A> |
+<font color="#cc6600">Canfield</font> |
+<A HREF="golf-help.html"> Golf </A> |
+<A HREF="pyramid-help.html"> Pyramid </A> |
+<A HREF="spider-help.html"> Spider </A> |
+<A HREF="clock-help.html"> Clock </A> | <p><p>
+<A HREF="calculation-help.html"> Calculation </A> |
+<A HREF="shamrocks-help.html"> Shamrocks </A> |
+<A HREF="scorpion-help.html"> Scorpion </A> |
+<A HREF="kingalbert-help.html"> King Albert </A> |
+<A HREF="yukon-help.html"> Yukon </A> |
+<A HREF="castle-help.html"> Beleaguered Castle </A> |
+<A HREF="flowergarden-help.html"> Flower Garden </A>
+</center><HR>
+<P>
+<HTML>
+<HEAD><TITLE> Canfield Solitaire Help </TITLE> </HEAD>
+<BODY>
+
+<H1> Canfield Solitaire Instructions </H1>
+
+Version 1.02 (Mar 16 2000) Copyright &copy; 2000 Andrew Pipkin
+<I><A HREF="mailto:apipkin@pagesz.net">apipkin@pagesz.net</A></I>
+
+<H2> Overview </H2>
+Like Klondike solitaire, the goal of Canfield is to move all the cards in a
+deck to suit stacks of ascending rank, forming stacks of descending rank an
+alternate color as an intermediate stage. Cards are drawn from a deck three
+at a time. Unlike Klondike, the base card of the suit stacks is usually not
+an ace. In addition to the deck, 13 cards are placed in a reserve of which
+only the top is accessible.
+
+<H2> Layout </H2>
+
+There are four parts of the screen.
+
+<UL>
+<LI> <B>Reserve</B>
+The reserve consists of 13 cards on the left side of the top row. The top
+card of the reserve is turned face up and can be moved to the building
+stacks or the suit stacks.
+
+<P><LI> <B>Suit Stacks</B>
+The suit stacks are located on the right side of the upper row. The starting
+rank of the suit stacks is determined by a randomly drawn card which is
+moved to the suit stacks. A "ghost" card indicates the base card of the
+other three stacks.
+
+<P><LI> <B>Deck</B>
+The deck is located on the left side of the bottom row. Three cards from the
+deck are turned up from the deck and placed to the right of the deck. The
+topmost of these three can be moved to a suit or building stack. Clicking on
+the deck or rightclicking anywhere on the screen will turn over an
+additional three cards. When there are no more cards in the deck, an outline
+will appear. Clicking inside the outline will begin another pass through the
+deck. An unlimited number of passes through the deck can be made.
+
+<P><LI> <B>Building Stacks</B>
+The building stacks are found in the right side of the bottom row. Each
+stack initially contains one randomly chosen card. A card can be placed on
+top of the stack if it has a different color and a rank one less than the
+card currently at the top. Stacks can be merged, leaving an empty space, but
+moving part of one stack to another is not allowed. Empty building stacks
+can only accept cards from the reserve (which will be moved automatically).
+Cards can be moved from the deck to an empty space if the reserve is
+exhausted.
+</UL>
+
+<H2> Moving Cards </H2>
+
+To move a card, click on the card (which will highlight it) and then
+click on the destination. The following are valid moves:
+
+<OL>
+
+<LI>
+A card can be moved from the reserve, deck or top of the building stacks to
+the suit stacks if the card's suit is the same as the cards in the stack and
+the card's rank is the base rank of the building stack or one more than the
+card at the top of the stack. (Aces are placed on top of kings in the suit
+stacks.)
+
+<P><LI> A card from the reserve or deck can be moved to the top of a building
+stock if the card has a different color and a rank one less than the card
+at the top of the stack. (Kings can be placed on aces.)
+<P><LI> A card from the reserve can fill to an empty building stack.
+ If the reserve is empty, a card from the deck can fill an empty building
+stack.
+<P><LI> An entire building stack can be moved to the top of another building
+stack.
+</OL> <P>
+
+A card will be automatically moved to the suit stacks from the building
+stacks if the cards which might be placed on top of it are already in the
+suit stacks. Clicking undo will retract an automatic move.
+
+<H2> Buttons </H2>
+
+Clicking on these buttons will perform the following actions:
+
+<DL>
+<DT><B> New Game</B> <DD>Begin a new game after shuffling the deck
+<DT><B> Restart</B> <DD> Return to the original state of the current game
+<DT><B> Undo</B> <DD> Return to the condition before the previous move was
+made
+<DT><A NAME="options"><B> Options</B> </A> <DD> Bring up a window with the
+following options:
+<DL> <DT> <B> Number of cards drawn </B>
+<DD> This option determines the number of cards which are turned up
+from the deck at a time. The number can vary from 1 to 5, with 3 the default.
+<DT> <B>Number of redeals</B> <DD>This sets the additional number of passes
+which can be made through the deck
+<DT> <B>Display deck contents</B> <DD>
+Setting this option will display a listing of the deck, highlighting the
+available card. After the initial pass through the deck, upcoming cards will
+be displayed above the current card, with the accessible cards appearing in
+the rightmost column. Occasionally it is beneficial to refrain from removing
+a card from the deck because it will a set up a better order in the
+subsequent pass through the deck. Listing the deck will show when these
+instances occur.
+<DT>  <B> Automatic card moving </B> <DD>
+When this box is set (which is the default), a card atop a building stack
+will be moved to its suit stack automatically if there are no
+cards available which might be placed on top of it. </DL>
+</DL>
+
+
+<H2> History </H2>
+<DL>
+<DT> <B> Version 1.02 </B> (2000/03/16) <DD> Right-clicking added
+<DT> <B> Version 1.01 </B> (2000/01/23) <DD> Options added
+<DT> <B> Version 1.0 </B> (2000/01/13)
+<DD> First public release
+</DL>
+<HR>
+</BODY> </HTML>

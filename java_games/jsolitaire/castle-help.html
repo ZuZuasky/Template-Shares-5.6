@@ -1,0 +1,143 @@
+<HR><center>
+<A HREF="jsolitaire.php">Home</A> |
+<A HREF="klondike-help.html"> Klondike</A> |
+<A HREF="freecell-help.html"> FreeCell</A> |
+<A HREF="canfield-help.html"> Canfield</A> |
+<A HREF="golf-help.html"> Golf </A> |
+<A HREF="pyramid-help.html"> Pyramid </A> |
+<A HREF="spider-help.html"> Spider </A> |
+<A HREF="clock-help.html"> Clock </A> | <p><p>
+<A HREF="calculation-help.html"> Calculation </A> |
+<A HREF="shamrocks-help.html"> Shamrocks </A> |
+<A HREF="scorpion-help.html"> Scorpion </A> |
+<A HREF="kingalbert-help.html"> King Albert </A> |
+<A HREF="yukon-help.html"> Yukon </A> |
+<font color="#cc6600">Beleaguered Castle</font> |
+<A HREF="flowergarden-help.html"> Flower Garden </A>
+</center><HR>
+<P>
+<HTML>
+<HEAD><TITLE> Java Beleaguered Castle Help </TITLE> </HEAD>
+<BODY>
+
+<H1> Beleaguered Castle Instructions </H1>
+
+Version 1.00 (Feb 8 2000) Copyright &copy; 1999-2000 Andrew Pipkin
+<I><A HREF="mailto:apipkin@pagesz.net">apipkin@pagesz.net</A></I>
+
+<H2> Overview </H2>
+
+The objective of Beleaguered Castle solitaire is to erode the "wall" stacks
+on the sides of the layout by placing their contents in the suit stacks in
+the middle. (Beleaguered Castle can be considered "FreeCell without free
+cells", but card stacks do not need to have alternating colors and the aces
+are already removed to compensate (partially) for the lack.)
+
+<H2> Layout </H2>
+
+There are two types of card stacks:
+
+<UL>
+<LI> <B>Building Stacks</B>
+There are four building, or wall, stacks on the left and right sides of the
+layout. A building stack can accept a card of any suit provided that the
+card's rank is one less than the rank of the card currently at the top
+of the stack. An empty building stack can accept any card from the top
+of another stack.
+
+<P><LI> <B>Suit Stacks</B>
+The suit stacks are located in the middle column of the layout and initially
+contain an ace. Suit stacks can accept a card from the tops of the building
+if the suit is the same, and the rank is one more than the rank of the
+card at the top of the stack.
+</UL>
+
+<H2> Moving Cards </H2>
+
+To move a card, click on the card (which will highlight it) and then
+click on the destination. The following are valid moves:
+
+<OL><LI>
+A card at the top of a stack can be moved to its corresponding suit stack if
+the rank of the card at the top of that stack is one less than the card's
+rank (Kings have a rank of 13, queens 12, jacks 11 and an ace has a rank of
+1).
+<P><LI>
+The card at the top of a building stack can be moved to an empty building
+stack.
+<P><LI>
+A card can be moved from a building stack to another building stack if the
+card at the top of the destination stack has a rank one more than the card.
+<P><LI>
+Ordered cards at the top of a building stack can be moved to another
+building stack if there is a card in the ordered sequence which has a a rank
+one less than the card at the top of the destination stack. There must be an
+empty space for every moved card below the top card.
+</OL> <P>
+
+To move an ordered sequence of cards at the top of a stack to an empty
+building stack, first select all the ordered cards by clicking twice on the
+stack, then click the empty space. If there are fewer empty spaces than
+selected cards, the number of cards moved will equal the original number of
+empty spaces.
+<P>
+Right-clicking on a stack will move the its top card to an empty space, if
+present. If more than one card in the right-clicked stack has been selected,
+the selected cards will be moved to empty stacks until there are no more
+selected cards or there are no more empty stacks.
+<P>
+A card will be automatically moved to the suit stacks from the tops of the
+building stacks if the cards which might be placed on top of it are already
+in the suit stacks. Clicking undo will retract an automatic move.
+
+<H2> Cheating </H2>
+
+Holding the shift key down while moving multiple cards will
+make the move even if there are not enough empty spaces.
+
+<H2> Tips </H2>
+
+<UL> <LI>Increase the rank of the cards at the top of the suit stacks (in the
+options window) if you are unfamiliar with the game.
+<LI> Try to obtain an empty space early in the game, then move a king to
+the empty space and build on that.
+<LI> Move an ordered sequence of cards in stages if there are not enough
+empty spaces to move the sequence in one step. If there is more than one
+empty space, transfer as many cards as possible to each space and then
+reassemble the sequence on the desired destination stack. Even if there are
+not enough empty spaces, it might be possible to move the sequence if there
+is a card on top of another stack
+which can accept a subsequence of the moved cards. </UL>
+
+<H2> Buttons </H2>
+
+Clicking on these buttons will perform the following actions:
+
+<DL>
+<DT><B> New Game</B> <DD>Begin a new game after shuffling the deck
+<DT><B> Restart</B> <DD> Return to the original state of the current game
+<DT><B> Undo</B> <DD> Return to the condition before the previous move was
+made
+<DT><A NAME="options"><B> Options</B> </A> <DD> Bring up a window with the
+following options:
+<DL>
+<DT> <B> Starting rank </B> <DD> This option sets the rank of the
+cards at the tops of the suit stacks at the start of the game. A new game
+must be started for this option to take effect. Increasing this value will
+result in an easier game. Having no cards initially in the suit stacks
+will produce a more difficult variation which is also known as Streets
+and Alleys
+
+<DT>  <B> Automatic card moving </B> <DD> When this box is set (which is the
+default), a card atop a stack will be moved to its suit stack
+automatically if there are no
+cards available which might be placed on top of it. </DL>
+</DL>
+
+<H2> History </H2>
+<DL>
+<DT> <B> Version 1.00 </B> (2000/02/08)
+<DD> First public release
+</DL>
+<HR>
+</BODY> </HTML>

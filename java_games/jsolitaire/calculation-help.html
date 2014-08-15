@@ -1,0 +1,106 @@
+<HR><center>
+<A HREF="jsolitaire.php">Home</A> |
+<A HREF="klondike-help.html"> Klondike</A> |
+<A HREF="freecell-help.html"> FreeCell</A> |
+<A HREF="canfield-help.html"> Canfield</A> |
+<A HREF="golf-help.html"> Golf </A> |
+<A HREF="pyramid-help.html"> Pyramid </A> |
+<A HREF="spider-help.html"> Spider </A> |
+<A HREF="clock-help.html"> Clock </A> | <p><p>
+<font color="#cc6600">Calculation</font> |
+<A HREF="shamrocks-help.html"> Shamrocks </A> |
+<A HREF="scorpion-help.html"> Scorpion </A> |
+<A HREF="kingalbert-help.html"> King Albert </A> |
+<A HREF="yukon-help.html"> Yukon </A> |
+<A HREF="castle-help.html"> Beleaguered Castle </A> |
+<A HREF="flowergarden-help.html"> Flower Garden </A>
+</center><HR>
+<P>
+<HTML>
+<HEAD><TITLE> Calculation Solitaire Help </TITLE> </HEAD>
+<BODY>
+
+<H1> Calculation Instructions </H1>
+
+Version 1.00 (Mar 17 2000) Copyright &copy; 2000 Andrew Pipkin
+<I><A HREF="mailto:apipkin@pagesz.net">apipkin@pagesz.net</A></I>
+
+<H2> Overview </H2>
+While Calculation has the usual goal of arranging the entire contents of the
+deck in four stacks of thirteen cards, the suits of the cards in these
+stacks is irrelevant. Instead, the four stacks accept cards whose ranks
+differ by a specified interval. Even though the computer calculates the
+accepted sequences of cards, the game is still extremely challenging.
+
+<H2> Layout </H2>
+
+There are three areas of the screen:
+
+<UL>
+<LI> <B>Deck</B>
+The deck is spread out on the left side under the button panel. Only
+the top card of the deck is face up and accessible.
+<P>
+
+<P><LI> <B> Destination Stacks</B> The destination stacks are located
+in the middle column of the layout. The ranks the top stack accepts differ
+by one, and the difference in the lower stacks is two, three and four. A
+list of the ranks accepted by the stack runs along the sides of the stack.
+The listing begins at the bottom of the left side and continues at the
+bottom of the right side. The rank which the stack currently accepts is
+highlighted. The destination stacks accept any card with the desired rank
+regardless of its suit.
+
+<P><LI> <B> Waste Piles</B>
+The four waste piles are located in the right column of layout. A waste
+pile can accept any card and can contain an unlimited number of cards.
+Transferring cards between discard piles is not allowed. The only way to
+remove a card from a waste pile is to move its top card to a destination
+stack.
+</UL>
+
+<H2> Game Play </H2>
+
+To move a card, click on the card (which will highlight it) and then
+click on the destination. The following are valid moves:
+
+<OL>
+<LI> A card can be moved from the top of the deck or a waste pile
+to a destination stack if the card has the desired rank. Rightclicking
+on a card will attempt to move it to a destination stack.
+<P><LI> A card can be moved from the deck to any waste pile <P>
+</OL>
+
+<H2> Tips </H2>
+
+<UL>
+<LI> Play with a high number of cards initially in the destination stacks
+until you have a feel for the game's strategies.
+<LI> Try to build reverse sequences in the discard piles.
+<LI> Consider reserving a waste pile solely for kings, because the
+cards under a king cannot be accessed until a stack is almost complete.
+</UL>
+
+<H2> Buttons </H2>
+
+Clicking on these buttons will perform the following actions:
+
+<DL>
+<DT><B> New Game</B> <DD>Begin a new game after shuffling the deck
+<DT><B> Restart</B> <DD> Return to the original state of the current game
+<DT><B> Undo</B> <DD> Return to the condition before the previous move was
+made
+<DT><A NAME="options"><B> Options</B> </A> <DD> Bring up a window with the
+following options:
+<DL> <DT> <B> Initial # of Cards </B> <DD> This sets the number of cards
+which are initially in the destination stacks. The default is one.
+Increasing this number will make the game easier to win.
+</DL></DL>
+
+<H2> History </H2>
+<DL>
+<DT> <B> Version 1.0 </B> (2000/03/17)
+<DD> First public release
+</DL>
+<HR>
+</BODY> </HTML>

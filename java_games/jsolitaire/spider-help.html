@@ -1,0 +1,175 @@
+<HR><center>
+<A HREF="jsolitaire.php">Home</A> |
+<A HREF="klondike-help.html"> Klondike</A> |
+<A HREF="freecell-help.html"> FreeCell</A> |
+<A HREF="canfield-help.html"> Canfield</A> |
+<A HREF="golf-help.html"> Golf </A> |
+<A HREF="pyramid-help.html"> Pyramid </A> |
+<font color="#cc6600">Spider</font> |
+<A HREF="clock-help.html"> Clock </A> | <p><p>
+<A HREF="calculation-help.html"> Calculation </A> |
+<A HREF="shamrocks-help.html"> Shamrocks </A> |
+<A HREF="scorpion-help.html"> Scorpion </A> |
+<A HREF="kingalbert-help.html"> King Albert </A> |
+<A HREF="yukon-help.html"> Yukon </A> |
+<A HREF="castle-help.html"> Beleaguered Castle </A> |
+<A HREF="flowergarden-help.html"> Flower Garden </A>
+</center><HR>
+<P>
+<HTML>
+<HEAD><TITLE> Spider Solitaire Help </TITLE> </HEAD>
+<BODY>
+
+<H1> Spider Instructions </H1>
+
+Version 1.00 (Feb 26 2000) Copyright &copy; 1999-2000 Andrew Pipkin
+<I><A HREF="mailto:apipkin@pagesz.net">apipkin@pagesz.net</A></I>
+
+<H2> Overview </H2>
+Spider is a challenging (and time-consuming) game using two decks which was
+supposedly the favorite solitaire of FDR. While Spider has the usual
+objective of arranging all suits in order, Spider does not provide a stack
+for each suit to be assembled in. Instead, the suits must be ordered in the
+building stacks and are then moved to a discard pile. The game is won when
+all cards in both decks are in the discard pile. Stacks in Spider can be
+built with any suit, but multiple cards moved between stacks must all have
+the same suit. Several non-standard options have been implemented to make
+the game less daunting for beginners.
+
+<H2> Layout </H2>
+
+There are four areas of the screen:
+
+<UL>
+<LI> <B>Building Stacks </B>
+There are ten building stacks which occupy the bottom half of the screen.
+Only the top card of each stack is face up, with the others being turned
+over when the card above them is removed. An empty building stack can accept
+any card. The default number of cards initially in the building stacks is
+six for the first four stacks and five for the remainder. These values can
+be varied, with a smaller number resulting in an easier game.
+
+<P><LI> <B>Stock </B>
+The stock is found in the upper left corner of the screen and contains the
+cards which are not initially in the building stacks. When there are no more
+possible moves in the building stacks, clicking on the stock will deal an
+additional card to each building stack.
+
+<P><LI> <B>Discard Pile</B>
+The discard pile is located to the right of the button panel and is
+initially empty. All thirteen cards in a suit can be moved to the discard
+pile if they are arranged in descending rank from king to ace. (An ordered
+suit will be moved automatically unless the automatic moving option is
+turned off.) The game is won when all four suits for both decks have been
+moved to the discard pile.
+
+<P><LI> <B> "Free Cells" </B>
+If the "# of free cells" option in the options windows is set to a non-zero
+value, the free cells will appear on the right side of the upper row.
+The free cells are used to temporarily hold a card from a building stack.
+Up to four free cells can be used. The free cells are an original modification
+and are not found in the standard rules of Spider.
+</UL>
+
+<H2> Moving Cards </H2>
+
+To move a card, click on the card (which will highlight it) and then
+click on the destination. Clicking on a card below the top will select
+all cards from the clicked card to the stack top if the cards have the
+same suit and are in descending order. Clicking twice on a stack selects
+all cards in descending order with the same suit.
+<P>
+The term <I>natural build</I> is defined as a sequence of cards with the same
+suit at the top of a building stack in which each card's rank is one less
+than that of the card above it.
+<P>
+The following rules indicate how cards can be moved between stacks:
+
+<OL><LI>
+A card at the top of a building stack or free cell can be placed on top of
+another stack if the card's rank is one less than the rank of the card at
+the stack top. The suit of the cards does not matter.
+<P><LI>
+A natural build can be moved to another building stack if the card at the
+top of the destination stack has a rank one more than that of the highest
+ranking card in the natural build.
+<P><LI>
+Any card at the top of a building stack or natural build can be moved to an
+empty building stack.
+<P><LI>
+Any card at the top of a building stack can be moved to an empty free cell
+(if free cells are used.)
+<P><LI>
+Clicking on the stock will move a card from the stock to each
+building stack (if the stock does not become empty first.) Each stack
+must contain at least one card before a card from the stock is added to
+it (unless the allow empty spaces before draw option is set.)
+<P><LI>
+A natural build containing all thirteen cards in the suit can be moved to
+the discard pile. (This will be done automatically unless the automatic
+moving option is turned off.)
+</OL>
+
+<H2> Tips </H2>
+
+<UL> <LI>
+If you are unfamiliar with the game, play with beginner-friendly options
+until you have a feel for the strategies used in Spider. These options are
+using free cells, a small number of cards initially in the building stacks,
+and allowing kings on aces and empty spaces before dealing.
+<P><LI>
+Try to rearrange the stacks so that the length of the natural builds is
+maximized. If cards are swapped between stacks, a free cell can be used to
+temporarily hold one of the moved cards. If free cells are not used, or more
+than one card is to be swapped, an empty building stacks must be created. At
+least two empty spaces must be used if significant rearrangement is to be
+performed.
+<P><LI>
+After drawing cards from the stock, do not make the first move you
+see. Hold back and try to figure out the optimal way to deal with
+the new cards.
+<P><LI>
+Undo is your friend. Don't be afraid to use it.
+</UL>
+
+<H2> Buttons </H2>
+
+Clicking on these buttons will perform the following actions:
+
+<DL>
+<DT><B> New Game</B> <DD>Begin a new game after shuffling the deck
+<DT><B> Restart</B> <DD> Return to the original state of the current game
+<DT><B> Undo</B> <DD> Return to the condition before the previous move was
+made
+<DT><A NAME="options"><B> Options</B> </A> <DD> Bring up a window with the
+following options:
+<DL>
+<DT> <B> # of cards in stacks</B> <DD>
+This option determines the number of cards initially in the building stacks.
+The default is six in the first four stacks and five in the remainder.
+The number can be varied from between 2 and 7. A smaller number will
+result in a more winnable game. A new game must be started for this option
+to take effect.
+<DT> <B> # of free cells  </B> <DD>
+This option sets the number of free cells. The free cells will appear on the
+right side of the upper row. Up to four free cells can be used. Using free
+cells will facilitate rearrangement of the stacks into natural builds.
+<DT> <B> Automatic moving </B> <DD>
+If this checkbox is set (which is the default), a natural build containing
+all thirteen cards in a suit will be moved automatically to the discard pile.
+<DT> <B> Allow unfilled spaces before draw </B> <DD>
+Setting this checkbox will not require that all building stacks contain
+at least one card before accepting a card from the stock.
+<DT> <B> Allow kings on aces </B> <DD>
+If this option is set, the ranks will wrap around and kings can be placed
+on aces. Normally, no card can be placed on top of an ace.
+</DL>
+</DL>
+
+<H2> History </H2>
+<DL>
+<DT> <B> Version 1.00 </B> (2000/02/26)
+<DD> First public release
+</DL>
+<HR>
+</BODY> </HTML>

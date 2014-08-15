@@ -1,0 +1,1 @@
+$BASEURL/admin/index.php?act=log{Show Logs},$BASEURL/admin/index.php?act=ipcheck{Check Ip},$BASEURL/admin/index.php?act=ipsearch{Search IP},$BASEURL/admin/index.php?act=latest_comments{Show Latest Comments}

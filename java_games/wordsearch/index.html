@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>Word Search</title>
+</head>
+<body bgcolor="#ffffff" link="#990000" vlink="#999999">
+
+<font color="#cc6600" face="Arial,Helvetica" size=4><b>Word Search Applet</b></font></font>
+<hr noshade>
+<p>
+<center>
+
+<table border=0 cellpadding=8 cellspacing=0 width=540><tr><td>
+<font face="Arial,Helvetica" size=2>
+Now for a (semi-) educational game. To play, just hit the 'New Game' button,
+then drag your mouse over the grid to select a word. Once found, words will
+remain circled. If you get stuck, hit 'Solve Game'.
+</font>
+</td></tr></table>
+<p>
+
+<applet code="WordSearch.class" width=425 height=350>
+<param name="gridcolors" value="black,white,#ffffcc,yellow">
+<param name="listcolors" value="#660000,#ffffcc,#666666">
+<param name="files" value="animals.txt,countries.txt,measures.txt,movies.txt,nightsky.txt">
+</applet>
+<p>
+
+<table border=0 cellpadding=8 cellspacing=0 width=540><tr><td>
+<font face="Arial,Helvetica" size=2>
+The applet reads data from one or more plain text files located on the server.
+Given a list of such file URLs, it will load a new set of words for each game,
+looping back to the first file after the last.
+<p>
+The words in each list are stripped of non-alpha characters and converted to
+upper-case before being added to the letter grid, so 'New Mexico' shows on
+the grid as <font face="Courier">N E W M E X I C O</font>. Words are listed in
+the order read.
+<p>
+Words that are too big for the grid or just can't be placed anywhere because no
+space is left, are dropped from the list (just for that particular game).
+</font>
+</td></tr></table>
+<p>
+
+<table border=0 cellpadding=8 cellspacing=0 width=540>
+<tr bgcolor="#cccccc">
+  <td><font face="Arial,Helvetica" size=2><b>Name</b></font></td>
+  <td><font face="Arial,Helvetica" size=2><b>Format</b></font></td>
+  <td><font face="Arial,Helvetica" size=2><b>Description</b></font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><font color="#cc6600"><b>screencolors</b></font><br>(optional)</font>
+  <td>
+    <font face="Arial,Helvetica" size=2>
+    <i>color,color,color</i>
+    </font>
+  </td>
+  <td><font face="Arial,Helvetica" size=2>Sets the text, background and border colors used on the applet's main display. The defaults are <font color="#cc6600">black,white,black</font>.</font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><font color="#cc6600"><b>buttoncolors</b></font><br>(optional)</font>
+  <td>
+    <font face="Arial,Helvetica" size=2>
+    <i>color,color</i>
+    </font>
+  </td>
+  <td><font face="Arial,Helvetica" size=2>Set the foreground and background colors used for buttons. The default is <font color="#cc6600">black,white,black</font>.</font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><font color="#cc6600"><b>gridcolors</b></font><br>(optional)</font>
+  <td>
+    <font face="Arial,Helvetica" size=2>
+    <i>color,color,color,color</i>
+    </font>
+  </td>
+  <td><font face="Arial,Helvetica" size=2>For the letter grid, the first two set the text and background colors, the third is used to shade found words and the last is used to shade the current user selection. The defaults are <font color="#cc6600">black,white,lightGray,yellow</font>.</font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><font color="#cc6600"><b>listcolors</b></font><br>(optional)</font>
+  <td>
+    <font face="Arial,Helvetica" size=2>
+    <i>color,color,color,color</i>
+    </font>
+  </td>
+  <td><font face="Arial,Helvetica" size=2>For the word list, the first two set the text and background colors while the third is used for words that have been found. The defaults are <font color="#cc6600">black,white,lightGray</font>.</font></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td colspan=2><font face="Arial,Helvetica" size=2>For all color parameters, <i>color</i> may be one of the following: <font color="#cc6600">black</font>, <font color="#cc6600">blue</font>, <font color="#cc6600">cyan</font>, <font color="#cc6600">darkgray</font>, <font color="#cc6600">gray</font>, <font color="#cc6600">green</font>, <font color="#cc6600">lightgray</font>, <font color="#cc6600">magenta</font>, <font color="#cc6600">orange</font>, <font color="#cc6600">pink</font>, <font color="#cc6600">red</font>, <font color="#cc6600">white</font> or <font color="#cc6600">yellow</font>. Or you can specify an RGB hex triplet, e.g. <font color="#cc6600">#ffcc99</font>.</font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><font color="#cc6600"><b>screenfont</b></font><br>(optional)</font></td>
+  <td><font face="Arial,Helvetica" size=2><i>name,style,size</i></font></td>
+  <td><font face="Arial,Helvetica" size=2>Sets the font used for message text. Defaults to <font color="#cc6600">helvetica,bold,12</font>.</font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><font color="#cc6600"><b>buttonfont</b></font><br>(optional)</font></td>
+  <td><font face="Arial,Helvetica" size=2><i>name,style,size</i></font></td>
+  <td><font face="Arial,Helvetica" size=2>Sets the font used for button text. Defaults to <font color="#cc6600">dialog,plain,10</font>.</font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><font color="#cc6600"><b>gridfont</b></font><br>(optional)</font></td>
+  <td><font face="Arial,Helvetica" size=2><i>name,style,size</i></font></td>
+  <td><font face="Arial,Helvetica" size=2>Sets the font used in the letter grid. Defaults to <font color="#cc6600">courier,plain,14</font>.</font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><font color="#cc6600"><b>listfont</b></font><br>(optional)</font></td>
+  <td><font face="Arial,Helvetica" size=2><i>name,style,size</i></font></td>
+  <td><font face="Arial,Helvetica" size=2>Sets the font used in the word list. Defaults to <font color="#cc6600">helvetica,plain,12</font>.</font></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td colspan=2><font face="Arial,Helvetica" size=2>For all font parameters, <i>name</i> may be one of: <font color="#cc6600">courier</font>, <font color="#cc6600">dialog</font>, <font color="#cc6600">helvetica</font>, <font color="#cc6600">symbol</font> or <font color="#cc6600">timesroman</font> and <i>style</i> may be one of: <font color="#cc6600">bold</font>, <font color="#cc6600">bolditalic</font>, <font color="#cc6600">italic</font> or <font color="#cc6600">plain</font>.</font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><font color="#cc6600"><b>gridsize</b></font><br>(optional)</font></td>
+  <td>
+    <font face="Arial,Helvetica" size=2>
+    <i>n,m,d</i>
+    </font>
+  </td>
+  <td><font face="Arial,Helvetica" size=2>Sets the number of rows and columns used in the letter grid and the size, in pixels, of each cell (this should be slightly bigger than the size of the grid font). The defaults are <font color="#cc6600">15,15,20</font></font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><font color="#cc6600"><b>files</b></font></td>
+  <td>
+    <font face="Arial,Helvetica" size=2>
+    <i>url1, url2,...,urln</i>
+    </font>
+  </td>
+  <td><font face="Arial,Helvetica" size=2>A list of URLs. Each should point to a text file containing a list of words to use.
+      <p>
+      Each line of a file should contain a single word. If a line begins with a '#' character, the text following it is used for the puzzle name. See the .txt files below for examples.
+      </font>
+  </td>
+</tr>
+<tr bgcolor="#cccccc">
+  <td colspan=3><font face="Arial,Helvetica" size=2><b>Files</b></font></td>
+</tr>
+<tr valign=top>
+  <td colspan=2><font face="Arial,Helvetica" size=2>Source: <a href="WordSearch.java">WordSearch.java</a></font></td>
+  <td><font face="Arial,Helvetica" size=2>Classes: 
+      <a href="WordSearch.class">WordSearch.class</a>,
+      <a href="WSButton.class">WSButton.class</a>,
+      <a href="WSGrid.class">WSGrid.class</a>,
+      <a href="WSList.class">WSList.class</a> and
+      <a href="WSWord.class">WSWord.class</a>
+      </font>
+  </td>
+</tr>
+<tr valign=top>
+  <td colspan=4><font face="Arial,Helvetica" size=2>Data files:
+    <a href="animals.txt">animals.txt</a>,
+    <a href="countries.txt">countries.txt</a>
+    <a href="measures.txt">measures.txt</a>
+    <a href="movies.txt">movies.txt</a> and
+    <a href="nightsky.txt">nightsky.txt</a>
+    </font>
+  </td>
+</tr>
+<tr>
+  <td colspan=4><font face="Arial,Helvetica" size=2>All files in zip format: <a href="WordSearch.zip">WordSearch.zip</a></font></td>
+</tr>
+</table>
+<p>
+<hr noshade size=1>
+<font face="Arial,Helvetica" size=2><a href="../index.html">Home</a></font>
+</center>
+<p>
+
+</body>
+</html>

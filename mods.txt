@@ -1,0 +1,69 @@
+Mods Installed
+
+Radio with players for winamp, windows and quicktime
+
+radio management system through smi
+
+Marque donor block
+
+Gallery image plugin
+
+ajax torrent plugin
+
+last 24 hour visted plugin
+
+seedbox plugin
+
+enhanced login plugin
+
+avatar size increased to 150 x 150 5mb to allow for animated avatars
+
+allows all bb code in the shoutbox, ([img], etc.)
+
+added "peel" to main page
+
+php firewall 
+
+added site on/off and "offline" index.html
+
+Advanced Search cloud torrent search engine
+
+last 30 uploads
+
+modded shoutbox
+
+special shoutcast plugin
+
+browser stats plugin [needs work]
+
+Added Classic Games mod
+
+new torrent carosel added to browse page (different then the last 30)
+
+added glass effect category icons
+
+added animated country flags
+
+changed language flags to animated gif
+
+added Rusian, italian, Romainian, German dutch languages
+
+added donation block plugin
+
+removed [list] [/list from rules tablein db making site faster
+
+new theme with fixed background (tweaked vista theme)
+
+xxx confirm dialog box added
+
+added twitter mod
+
+Animated banner
+
+made side slide menu times faster
+
+Added imageflow y modoutube mod
+
+Translated all to english
+
+Twitter

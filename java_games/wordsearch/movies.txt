@@ -1,0 +1,21 @@
+#One Word Movie Titles
+Alien
+Braveheart
+Brazil
+Casablanca
+Eraser
+Fargo
+Ghandi
+Ghostbusters
+Harvey
+Jaws
+Metropolis
+Network
+Patton
+Platoon
+Rebecca
+Sleuth
+Them
+Unfogiven
+Vertigo
+Witness

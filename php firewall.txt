@@ -1,0 +1,39 @@
+Firewall required PHP 5
+PHP Firewall doesn't use any database, but flatfile system.
+It's very small, very simple, really easy to install and fastest.
+PHP Firewall have is own logs system and email alert.
+No .htaccess file required for better performance.
+
+Security listing
+
+    XSS protection
+    UNION SQL Injection protection
+    Bads bots protection
+    Badsig bots protection
+    Bads requests methods protection
+    Badsig methods for the protection requests
+    Small DOS protection
+    Inclusion files protection
+    Santy and other worms protection
+    Server Protection
+    URL Query protection
+    Sanitize cookies
+    Post vars sanitize
+    Get vars sanitize
+    IPs range reserved denied
+    IPs range spam denied
+    Spam IPs range denied
+    IPs range protected
+    PHP globals desctruction
+
+    Upload the folder php-firewall /
+    put the php-firewall/logs.txt in writable chmod
+    Open the main file ( include/globalfuntcions.php for example ) and add these lines juste after the < ?php
+    Open the main file (index.php for example) and add lines THESE juste after the <? Php
+
+This line of code do globalfunctions.php top
+
+define ('PHP_FIREWALL_REQUEST_URI', strip_tags ($ _SERVER ['REQUEST_URI']));
+define('PHP_FIREWALL_ACTIVATION', true ); define ('PHP_FIREWALL_ACTIVATION', true);
+if ( is_file( @dirname(__FILE__).'/php-firewall/firewall.php' ) ) if (is_file (@ dirname (__FILE__). '/ php-firewall/firewall.php'))
+        include_once( @dirname(__FILE__).'/php-firewall/firewall.php' ); include_once (@ dirname (__FILE__). '/ php-firewall/firewall.php');  

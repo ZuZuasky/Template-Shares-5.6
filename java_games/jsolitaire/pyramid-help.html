@@ -1,0 +1,108 @@
+<HR><center>
+<A HREF="jsolitaire.php">Home</A> |
+<A HREF="klondike-help.html"> Klondike</A> |
+<A HREF="freecell-help.html"> FreeCell</A> |
+<A HREF="canfield-help.html"> Canfield</A> |
+<A HREF="golf-help.html"> Golf </A> |
+<font color="#cc6600">Pyramid</font> |
+<A HREF="spider-help.html"> Spider </A> |
+<A HREF="clock-help.html"> Clock </A> | <p><p>
+<A HREF="calculation-help.html"> Calculation </A> |
+<A HREF="shamrocks-help.html"> Shamrocks </A> |
+<A HREF="scorpion-help.html"> Scorpion </A> |
+<A HREF="kingalbert-help.html"> King Albert </A> |
+<A HREF="yukon-help.html"> Yukon </A> |
+<A HREF="castle-help.html"> Beleaguered Castle </A> |
+<A HREF="flowergarden-help.html"> Flower Garden </A>
+</center><HR>
+<P>
+<HTML>
+<HEAD><TITLE> Pyramid Solitaire Help </TITLE> </HEAD>
+<BODY>
+
+<H1> Pyramid Solitaire Instructions </H1>
+
+Version 1.00 (Mar 16 2000) Copyright &copy; 2000 Andrew Pipkin
+<I><A HREF="mailto:apipkin@pagesz.net">apipkin@pagesz.net</A></I>
+
+<H2> Overview </H2>
+
+<B>Note: </B> Due to an inconsistency in the way Java 1.0 handles overlapping,
+some older browsers might display the pyramid incorrectly. If the bottom
+halves of the cards are visible with only the top card seen in its
+entirety, click on the Options button, then click the checkbox labeled
+reverse layering and then click OK to layer the cards in the pyramid
+correctly.
+<P>
+The goal of Pyramid solitaire is to eliminate the entire deck by finding
+pairs of cards which total thirteen (Kings are eliminated singly). At the
+start of the game, only the cards in bottom row of the pyramid are
+available. The other rows in the pyramid become accessible as the cards
+below them are removed. The cards which are not in the pyramid are cycled
+throught one at a time.
+
+<H2> Layout </H2>
+
+There are three areas of the screen:
+<UL><LI> <B>Pyramid</B> The pyramid initially contains 28 cards arranged
+in seven rows. A card cannot be removed from the pyramid if it is covered
+by another card. Two cards must be removed to access the cards in the
+upper rows in the middle of the pyramid, but the cards in the sides
+of the pyramid only need one removal to become available.
+
+<P><LI> <B> Stock/Waste Pile </B> The stock is located in the upper left
+corner of the screen with the waste pile below it. Rightclicking anywhere
+on the screen or clicking twice on the stock will move the card on top of the
+stock to the waste pile and display the next card in the stock. The
+card on top of the waste pile is available.
+
+<P><LI> <B> Discard Pile </B> The discard pile is located on the right side
+of the screen below the button panel. Pairs of cards which total 13 (and
+kings) are moved to this stack. The game is won when all 52 cards are
+in this pile.
+
+<H2> Game Play </H2>
+
+The following actions represent valid moves:
+
+<OL><LI>Clicking on a king (rank == 13) will move it to the discard pile.
+
+<P><LI>To remove a pair of cards whose rank totals 13, click on the first card,
+then the second card and both cards will be moved to the discard pile.
+(Jacks have a rank of 11, Queens 12).
+
+<P><LI>Rightclicking anywhere on the screen or clicking twice on the stock
+will move the card currently on top of the stock to the waste pile. If the
+stock is empty, the cards in the waste pile will be transferred to the stock
+and another pass through the cards will be made if a redeal is available. </UL>
+
+<H2> Buttons </H2>
+
+Clicking on these buttons will perform the following actions:
+
+<DL>
+<DT><B> New Game</B> <DD>Begin a new game after shuffling the deck
+<DT><B> Restart</B> <DD> Return to the original state of the current game
+<DT><B> Undo</B> <DD> Return to the condition before the previous move was
+made
+<DT><A NAME="options"><B> Options</B> </A> <DD> Bring up a window with the
+following options:
+<DL> <B> Number of Redeals </B> <DD> This option determines the number of
+times the cards outside the pyramid and discard pile can be cycled through
+after the intial pass. A redeal occurs when the stock is empty
+and all the cards in the waste pile are moved to the stock, beginning another
+pass through the cards.  The default is no redeals.
+
+<DT><B> Reverse Layering </B> <DD> This checkbox does not affect gameplay
+but is used to fix a problem which might be encountered in older browsers
+as explained in the note above. This option should not be set if the
+pyramid is displayed properly.
+</DL> </DL>
+
+<H2> History </H2>
+<DL>
+<DT> <B> Version 1.0 </B> (2000/03/17)
+<DD> First public release
+</DL>
+<HR>
+</BODY> </HTML>

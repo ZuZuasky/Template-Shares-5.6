@@ -1,0 +1,127 @@
+<HR><center>
+<A HREF="jsolitaire.php">Home</A> |
+<A HREF="klondike-help.html"> Klondike</A> |
+<A HREF="freecell-help.html"> FreeCell</A> |
+<A HREF="canfield-help.html"> Canfield</A> |
+<A HREF="golf-help.html"> Golf </A> |
+<A HREF="pyramid-help.html"> Pyramid </A> |
+<A HREF="spider-help.html"> Spider </A> |
+<A HREF="clock-help.html"> Clock </A> | <p><p>
+<A HREF="calculation-help.html"> Calculation </A> |
+<A HREF="shamrocks-help.html"> Shamrocks </A> |
+<A HREF="scorpion-help.html"> Scorpion </A> |
+<A HREF="kingalbert-help.html"> King Albert </A> |
+<font color="#cc6600">Yukon</font> |
+<A HREF="castle-help.html"> Beleaguered Castle </A> |
+<A HREF="flowergarden-help.html"> Flower Garden </A>
+</center><HR>
+<P>
+<HTML>
+<HEAD><TITLE> Yukon Solitaire Help </TITLE> </HEAD>
+<BODY>
+
+<H1> Yukon Instructions </H1>
+
+Version 1.02 (Feb 8 2000) Copyright &copy; 2000 Andrew Pipkin
+<I><A HREF="mailto:apipkin@pagesz.net">apipkin@pagesz.net</A></I>
+
+<H2> Overview </H2>
+
+The initial setup for Yukon solitaire is the same as that of Klondike
+solitaire. Seven card stacks are made containing from one to seven cards,
+with only the top card turned face up. Instead of placing the remaining 24
+cards in a stack which is cycled through, four cards are placed face up on
+each stack except the leftmost. The objective is to put the entire deck in
+suit stacks of ascending rank, making stacks of descending rank with
+alternating colors as an intermediate stage. Any face up card can be placed
+on a card at the top of a stack which has a different color and a rank one
+greater than it. If the moved card is not the top card in its stack, all
+cards above it will be moved along with it.
+
+<H2> Layout </H2>
+
+The seven building stacks are in the middle of the screen, with two suit
+stacks on each side. If all the face up cards of a stack are removed, the
+topmost face down card will be turned over.
+
+<H2> Moving Cards </H2>
+
+To move a card, click on the card (which will highlight it) and then
+click on the destination. The following are valid moves:
+
+<OL>
+<LI> A card can be moved to a card which has a rank one more and a different
+color from it, moving all cards above it stack along with it.
+
+<LI> An ace can be moved to its suit stack. (This will usually be done
+automatically.)<P>
+<LI> A card at the top of a stack can be moved to its corresponding suit
+stack if the value of the card at the top of that stack is one less than the
+card's value (Kings have a value of 13, queens 12, jacks 11 and an ace has
+a value of 1).<P>
+<LI> A King can be moved to an empty building stack.
+</OL>
+
+A card will be automatically moved to the suit stacks from the tops
+of the building stacks if the cards which might be placed on top of it are
+already in the suit stacks. Clicking undo will retract an automatic move.
+
+<H2> Selecting Moved Cards </H2>
+
+Usually there will be only one face up card in the source stack which can be
+placed on top of the destination stack, and that move will be made
+regardless of how many cards are selected. If there are more than one card
+in a stack which can be placed on another card (for example a stack
+containing a 4 of hearts and a 4 of diamonds which can both be placed on a 5
+of clubs), it is necessary to select multiple cards to move the card lower
+in the stack. Clicking on a card below the top card will select all cards
+from the clicked card to the top of the stack and clicking twice on a stack
+will select all face up cards. If more cards are selected than can be moved,
+as many selected cards will be moved as possible.
+
+<H2> Strategy </H2>
+
+The general algorithm for playing Yukon solitaire is as follows:
+<OL>
+<LI> For each stack, see which face up cards in the other stacks can be moved
+to the top of the stack.
+<LI> If there is only one unordered card which can be moved to the top of the
+stack, go ahead and move it.
+<LI> If there are two or more cards which can be placed on the stack, make
+the move which will lead to turning over a face down card. If neither move
+will result in a new face up card, make the move which will enable more
+moves.
+<LI> Repeat until the game is won or there are no possible moves.
+</OL>
+<H2> Buttons </H2>
+
+Clicking on these buttons will perform the following actions:
+
+<DL>
+<DT><B> New Game</B> <DD>Begin a new game after shuffling the deck
+<DT><B> Restart</B> <DD> Return to the original state of the current game
+<DT><B> Undo</B> <DD> Return to the condition before the previous move was
+<DT><A NAME="options"><B> Options</B> </A> <DD> Bring up a window with the
+following options:
+<DL>
+<DT> <B> Starting rank </B> <DD> This option sets the rank of the
+cards at the tops of the suit stacks at the start of the game. A new game
+must be started for this option to take effect. Increasing this value will
+result in an easier game.
+<DT> <B>Empty spaces accept</B> <DD>
+This option enables empty building stacks to accept cards other than kings.
+<DT>  <B> Automatic card moving </B> <DD>
+When this box is set (which is the default), a card atop a building stack
+will be moved to its suit stack automatically if there are no
+cards available which might be placed on top of it. </DL>
+</DL>
+
+<H2> History </H2>
+<DL>
+<DT> <B> Version 1.02 </B> (2000/2/08) <DD> Starting rank option added.
+<DT> <B> Version 1.01 </B> (2000/1/23) <DD> Options added.
+<DT> <B> Version 1.00 </B> (2000/1/13)
+<DD> First Public Release
+</DL>
+<HR>
+</BODY> </HTML>
